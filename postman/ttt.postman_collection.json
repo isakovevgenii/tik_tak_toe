@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "93ec1b51-a9ce-4435-b5f1-66c8463b15ac",
+		"name": "ttt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrangement\": \"[[.,.,.],[.,.,.],[.,.,.]]\",\r\n    \"playerName1\": \"John1\",\r\n    \"playerName2\": \"John2\",\r\n    \"isFinished\": false,\r\n    \"scale\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/game/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"game",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update game",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gameId\": 13,\r\n    \"player\": \"John1\",\r\n    \"vertical\": \"1\",\r\n    \"horizontal\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/game/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"game",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
